@@ -1,0 +1,21 @@
+<h1><strong> This is listing of all Articles </strong> </h1>
+
+<Table> 
+ <thead>
+     <tr>
+        <th> Title </th>
+        <th> Description </th>
+        <th> Placeholder </th>
+     </tr>
+ </thead>
+ 
+ <tbody>
+     <% @all_articles.each do | x | %>
+        <tr>
+         <td> <%= x.title %> </td>
+         <td> <%= x.description %> </td>
+         <td> Placeholder </td>
+        </tr>
+     <% end %>
+  </tbody>
+</Table>
