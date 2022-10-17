@@ -10,10 +10,11 @@
  </thead>
  
  <tbody>
-     <% @all_articles.each do | x | %>
+     <% @all_articles.each do | article | %>
         <tr>
-         <td> <%= x.title %> </td>
-         <td> <%= x.description %> </td>
+         <td> <%= article.id %> </td>
+         <td> <%= article.title %> </td>
+         <td> <%= article.description %> </td>
          <td> Placeholder </td>
         </tr>
      <% end %>
