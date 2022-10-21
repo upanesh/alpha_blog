@@ -9,4 +9,5 @@ class User < ApplicationRecord
                          length: {in: 6..100 },
                          presence: true,
                          format: {with: VALID_EMAIL_REGEX }
+    has_secure_password
 end
